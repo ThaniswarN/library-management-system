@@ -136,3 +136,10 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+select {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
