@@ -7,3 +7,19 @@ Future Features:
 - Issue Book
 - Return Book
 - Database Connectivity
+
+
+
+- Admin Dashboard
+- Student Dashboard
+- Book Management
+- Issue Books
+- Return Books
+- Transaction Records
+- Student Profiles
+- Borrowed Books Tracking
+- Contact Page
+- About Page
+- FAQ Page
+- Feedback Page
+- Book Search Functionality
