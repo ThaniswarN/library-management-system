@@ -13,9 +13,13 @@
 
     <h1>Library Books</h1>
 
-    <input type="text" placeholder="Search Books">
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="Search Books"
+    onkeyup="searchBooks()">
 
-    <table>
+    <table id="booksTable">
         <tr>
             <th>ID</th>
             <th>Book Name</th>
@@ -39,6 +43,25 @@
             <td>Web Development</td>
             <td>David Green</td>
         </tr>
+
+        <tr>
+    <td>4</td>
+    <td>Java Programming</td>
+    <td>James Gosling</td>
+</tr>
+
+<tr>
+    <td>5</td>
+    <td>Computer Networks</td>
+    <td>Andrew Tanenbaum</td>
+</tr>
+
+<tr>
+    <td>6</td>
+    <td>Operating Systems</td>
+    <td>Silberschatz</td>
+</tr>
+        
     </table>
 
     <br>
@@ -52,6 +75,47 @@
     <div class="footer">
     © 2026 Library Management System
 </div>
+    
+    <script>
+function searchBooks() {
 
+    let input =
+        document.getElementById("searchInput");
+
+    let filter =
+        input.value.toUpperCase();
+
+    let table =
+        document.getElementById("booksTable");
+
+    let tr =
+        table.getElementsByTagName("tr");
+
+    for (let i = 1; i < tr.length; i++) {
+
+        let td =
+            tr[i].getElementsByTagName("td")[1];
+
+        if (td) {
+
+            let txtValue =
+                td.textContent || td.innerText;
+
+            if (
+                txtValue.toUpperCase()
+                .indexOf(filter) > -1
+            ) {
+
+                tr[i].style.display = "";
+
+            } else {
+
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+</script>
+    
 </body>
 </html>
