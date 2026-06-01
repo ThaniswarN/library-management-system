@@ -129,3 +129,10 @@ input {
     font-size: 28px;
     font-weight: bold;
 }
+
+textarea {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
