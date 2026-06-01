@@ -45,3 +45,16 @@ CREATE TABLE Transactions (
     return_date DATE
 );
 
+INSERT INTO Books VALUES
+(1,'Python Programming','steve Smith','Available'),
+(2,'Database Systems','Thomas Harington','Issued'),
+(3,'Computer Networks','Andrew Jhoni','Available');
+
+INSERT INTO Students VALUES
+(101,'Thaniswar N','Computer Science'),
+(102,'Arun Kumar','Information Technology'),
+(103,'Rahul','Computer Science');
+
+INSERT INTO Transactions VALUES
+(1,101,2,'2026-06-01','2026-06-15'),
+(2,102,1,'2026-06-05','2026-06-19');
