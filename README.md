@@ -1,2 +1,8 @@
-# library-management-system
-Library Management System using React + Spring Boot +MySQL for college project
+# Library Management System
+
+**Project for**: 2029 Batch  
+**Technologies**: React.js + Spring Boot + MySQL  
+**College**: VSB Engineering College, Karur
+
+## Status
+In Progress
