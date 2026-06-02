@@ -21,6 +21,11 @@
   <input type="text" id="author" placeholder="Author">
   <button type="submit">Add Book</button>
 </form>
+        <form id="bookForm">
+  <input type="text" id="bookName" placeholder="Book Name">
+  <input type="text" id="author" placeholder="Author">
+  <button type="submit">Add Book</button>
+</form>
 </div>
 
 <div class="dashboard">
@@ -130,6 +135,20 @@ function searchBooks() {
     }
 }
 </script>
-    
+   <script>
+document.getElementById("bookForm").addEventListener("submit", function(event) {
+
+  let bookName = document.getElementById("bookName").value;
+  let author = document.getElementById("author").value;
+
+  if(bookName === "" || author === "") {
+    alert("Please fill all fields");
+    event.preventDefault();
+  } else {
+    alert("Book Added Successfully");
+  }
+
+});
+</script> 
 </body>
 </html>
